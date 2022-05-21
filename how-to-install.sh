@@ -4,7 +4,7 @@ set -ue
 
 # Environments
 declare -r SELF_DIR="$(dirname "$(readlink -f "${BASH_SOURCE}")")"
-declare -r PACKAGE_LIST_DIR="${SELF_DIR}/package"
+declare -r PACKAGE_LIST_DIR="${SELF_DIR}/package/$(lsb_release -si)/$(lsb_release -sr)"
 
 # Constants
 declare -r EXIT_SUCCESS=0
