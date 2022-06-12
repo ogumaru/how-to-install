@@ -15,8 +15,16 @@
 
 ```bash
 # インストール方法の参照
-how-to-install.sh nvm
+$ how-to-install.sh nvm
 
 # アンインストール方法の参照
-how-to-install.sh --uninstall nvm
+$ how-to-install.sh --uninstall nvm
+
+# パッケージの一覧
+$ how-to-install --list
+ID	release	arch	package
+Ubuntu	22.04	x86_64	docker-rootless
+Ubuntu	22.04	x86_64	dotnet
+Ubuntu	22.04	x86_64	nvm
+Amazon	2	aarch64	aws
 ```
